@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Course | Eng. Moaz Magdy</title>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        :root { --gold: #fcc200; --dark: #060b1a; }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: 'Cairo', sans-serif; background: var(--dark); color: white; overflow-x: hidden; }
+
+        
+        header {
+            height: 60vh;
+            background: linear-gradient(rgba(6, 11, 26, 0.8), rgba(6, 11, 26, 0.8)), 
+                        url('https://www.zdnet.com/a/img/resize/0a58da30364d95267a57a870624f1146747d7c62/2021/07/19/8a3a238d-aeed-4f15-9441-f9084397507a/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=900&width=1200') center/cover;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid var(--gold);
+        }
+
+        h1 { font-family: 'Poppins', sans-serif; font-size: clamp(2.5rem, 6vw, 4rem); color: var(--gold); margin: 0; text-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+        .eng-tag { font-family: 'Poppins', sans-serif; font-size: 1.4rem; color: #fff; border: 1px solid var(--gold); padding: 5px 30px; border-radius: 50px; margin-top: 15px; }
+
+        .container { max-width: 1000px; margin: -60px auto 60px; padding: 20px; }
+
+        .card {
+            background: rgba(255, 255, 255, 0.07); backdrop-filter: blur(12px);
+            border-radius: 25px; margin-bottom: 40px; display: flex; flex-wrap: wrap;
+            overflow: hidden; border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .card-img {
+            flex: 1; min-width: 320px; min-height: 350px;
+            background-size: cover; background-position: center; transition: 0.5s;
+        }
+        .card:hover .card-img { transform: scale(1.1); }
+
+        .card-content { flex: 1.5; padding: 40px; }
+        h2 { font-family: 'Poppins', sans-serif; color: var(--gold); margin: 0; text-align: left; direction: ltr; font-size: 2rem; }
+        h3 { color: #a0aec0; margin: 5px 0 25px 0; font-size: 1.3rem; }
+        
+        ul { list-style: none; padding: 0; }
+        li { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; font-size: 1.1rem; }
+        li::before { content: "\f00c"; font-family: "Font Awesome 5 Free"; font-weight: 900; color: var(--gold); margin-left: 15px; }
+
+        footer { background: #000; padding: 60px 20px; text-align: center; border-top: 2px solid var(--gold); }
+        .contact-btn {
+            background: var(--gold); color: #000; padding: 15px 35px; border-radius: 50px;
+            text-decoration: none; font-weight: 900; margin: 10px; display: inline-flex; align-items: center; gap: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <header data-aos="zoom-in">
+        <h1>Programming Course</h1>
+        <div class="eng-tag">With Eng. Moaz Magdy</div>
+    </header>
+
+    <div class="container">
+        <div class="card" data-aos="fade-up">
+            <div class="card-img" style="background-image: url('https://img.freepik.com/free-photo/html-system-website-concept_23-2150376770.jpg?t=st=1715500000&exp=1715503600&hmac=images');"></div>
+            <div class="card-content">
+                <h2>Computer Science Fundamentals</h2>
+                <h3>تعليم أساسيات علوم الحاسب</h3>
+                <ul>
+                    <li>مفاهيم علوم الحاسب</li>
+                    <li>يعني ايه كومبيوتر ؟ وازاي بنستخدمه</li>
+                    <li>معني البرمجه</li>
+                    <li>محتواها من مصطلحات و مفاهيم</li>
+                    <li>اهم اللغات وايه معني لغة برمجه</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+            <div class="card-img" style="background-image: url('https://img.freepik.com/free-photo/working-business-format-office-with-laptop_23-2149151159.jpg');"></div>
+            <div class="card-content">
+                <h2>ICDL (Word-Excel-PowerPoint)</h2>
+                <h3>تعليم المهارات المكتبية</h3>
+                <ul>
+                    <li>تدريب عملي</li>
+                    <li>تدريب علي برامج و اكواد</li>
+                    <li>تعليم الطالب اكواد متناسبه مع مستواه</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 style="text-align: center; color: white; margin-bottom: 25px;">Contact Information</h2>
+        <div data-aos="flip-up">
+            <a href="tel:01099529496" class="contact-btn"><i class="fas fa-phone"></i> 01099529496</a>
+            <a href="mailto:Moazmagdy350@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> Moazmagdy350@gmail.com</a>
+        </div>
+        <p style="margin-top: 40px; opacity: 0.4;">&copy; 2026 Eng. Moaz Magdy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 1000, once: true }); </script>
+</body>
+</html>
